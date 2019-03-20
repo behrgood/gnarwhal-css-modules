@@ -1,0 +1,41 @@
+.gnarwhal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: inset -20px -50px 0 2px #a3ccba;
+  border-radius: 100%;
+  z-index: 2;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #a3ccba;
+    right: 0px;
+    border-radius: 100%;
+    top: 22px;
+    transform: rotate(5deg);
+    box-shadow: 10px -50px 0 lighten(#ecc9a5, 15%),
+      30px -150px 0 lighten(#ecc9a5, 15%), inset 5px 70px 40px -10px #a3ccba,
+      inset -40px -10px 40px 0 #a3ccba,
+      inset -100px -40px 5px 0 lighten(#a3ccba, 5%);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: inset -20px -50px 0 2px #a3ccba,
+      10px 50px 30px 0 lighten(#a3ccba, 5%);
+    top: 0px;
+    left: 2.5px;
+    transform-origin: left;
+    transform: rotate(-32deg);
+    z-index: -1;
+  }
+}

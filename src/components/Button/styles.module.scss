@@ -1,0 +1,19 @@
+.button {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: none;
+  position: absolute;
+  top: 16rem;
+}
+
+.primary {
+  composes: button;
+  background-color: green;
+  left: 3rem;
+}
+
+.secondary {
+  composes: button;
+  background-color: red;
+  left: 9rem;
+}
