@@ -1,2 +1,7 @@
-$primary-color: #282c34;
-$secondary-color: #61dafb;
+$blubber-blue: #a3ccba;
+$chads-khakis: #ecc9a5;
+$background-gradient: radial-gradient(
+  circle at center,
+  lighten($chads-khakis, 15%) 50%,
+  lighten($chads-khakis, 0%)
+);

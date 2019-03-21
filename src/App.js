@@ -14,7 +14,7 @@ class App extends Component {
     const { isHappy } = this.state;
 
     return (
-      <div className="wrap">
+      <div className="AppWrapper">
         <Gnarwhal isHappy={isHappy} />
         <Button
           onButtonClick={() => this.setHappy(true)}
@@ -23,7 +23,7 @@ class App extends Component {
         />
         <Button
           onButtonClick={() => this.setHappy(false)}
-          buttonText="☹️"
+          buttonText="😑"
           buttonType="secondary"
         />
       </div>

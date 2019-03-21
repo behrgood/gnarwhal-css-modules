@@ -6,12 +6,10 @@ import Body from "./Body";
 
 class Gnarwhal extends Component {
   render() {
-    const { isHappy } = this.props;
-
     return (
       <div className={styles.gnarwhal}>
-        <Face isHappy={isHappy} />
-        <Body />
+        <Face {...this.props} />
+        <Body {...this.props} />
       </div>
     );
   }

@@ -1,21 +1,5 @@
 @import "./styles/colors";
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 60vmin;
-  margin-left: -50%;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-// Gnarwhal
 body {
   display: flex;
   width: 100vw;
@@ -23,22 +7,13 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-    circle at center,
-    lighten(#ecc9a5, 15%) 50%,
-    lighten(#ecc9a5, 0%)
-  );
+  background: $background-gradient;
   min-height: 400px;
   min-width: 400px;
+}
 
-  h1 {
-    position: absolute;
-    bottom: 20px;
-    font-size: 10px;
-  }
-  .wrap {
-    width: 300px;
-    height: 200px;
-    position: relative;
-  }
+.AppWrapper {
+  width: 300px;
+  height: 200px;
+  position: relative;
 }
