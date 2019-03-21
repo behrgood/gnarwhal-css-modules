@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/gnarwhal-css-modules/precache-manifest.27d504391a042bf9ee34e46a0b16c66f.js"
+  "/gnarwhal-css-modules/precache-manifest.5560de20d64c4c87d0082161816de02e.js"
 );
 
 workbox.clientsClaim();
