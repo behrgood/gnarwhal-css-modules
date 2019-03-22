@@ -1,3 +1,4 @@
+// Global imports
 @import "../../../styles/colors";
 @import "../../../styles/mixins";
 
@@ -44,19 +45,18 @@
     box-shadow: 18px 0 0 darken($blubber-blue, 35%);
     transition: 0.2s ease-in-out;
   }
+}
 
-  // modification of face class
-  &Happy {
-    composes: face;
+.faceHappy {
+  composes: face;
 
-    &:before {
-      transform: scaleX(1);
-      border-radius: 100%;
-    }
-    &:after {
-      transform: translateY(-6px) translateX(-4px);
-      box-shadow: 26px 0 0 darken($blubber-blue, 35%);
-    }
+  &:before {
+    transform: scaleX(1);
+    border-radius: 100%;
+  }
+  &:after {
+    transform: translateY(-6px) translateX(-4px);
+    box-shadow: 26px 0 0 darken($blubber-blue, 35%);
   }
 }
 
