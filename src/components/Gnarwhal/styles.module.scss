@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .gnarwhal {
   width: 100%;
@@ -11,8 +12,7 @@
   z-index: 2;
 
   &:before {
-    content: "";
-    position: absolute;
+    @include pseudo;
     width: 150px;
     height: 150px;
     background: $blubber-blue;
@@ -28,8 +28,7 @@
   }
 
   &:after {
-    content: "";
-    position: absolute;
+    @include pseudo;
     width: 100%;
     height: 100%;
     border-radius: 100%;

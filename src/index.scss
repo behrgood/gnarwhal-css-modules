@@ -12,3 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:global {
+  @mixin pseudo($content: "", $display: block, $position: absolute) {
+    content: $content;
+    display: $display;
+    position: $position;
+  }
+}
