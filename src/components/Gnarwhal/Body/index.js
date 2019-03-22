@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import styles from "./styles.module.scss";
+import { fin, horn, spot, tail, tailHappy } from "./styles.module.scss";
 
 class Body extends Component {
   render() {
-    const tailClass = this.props.isHappy ? styles.tailHappy : styles.tail;
+    const tailClass = this.props.isHappy ? tailHappy : tail;
 
     return (
       <div>
-        <div className={styles.spot} />
-        <div className={styles.horn} />
+        <div className={spot} />
+        <div className={horn} />
         <div className={tailClass} />
-        <div className={styles.fin} />
+        <div className={fin} />
       </div>
     );
   }
